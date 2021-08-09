@@ -2,37 +2,101 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    font-family: 'Oswald', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    margin:auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="text"], [type="email"]{
+    padding:7px;
+    border-radius:10px;
+    margin-bottom: 10px;
+    background-color:#500F2F;
+    border:none;
+    box-shadow: 2px 5px 5px  #C2749A;
+    color:#FFF;
+    font-size:15px;
+    font-family: 'Oswald', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+textArea{
+    padding:7px;
+    border-radius:10px;
+    margin-bottom: 10px;
+    background-color:#8E2B5B;
+    border:none;
+    box-shadow: 2px 5px 5px  #C2749A;
+    color:#FFF;
+    font-size:15px;
+    font-family: 'Oswald', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"]{
+    padding:10px;
+    border-radius:10px;
+    margin-bottom: 10px;
+    background-color:#2A1EA6;
+    border:none;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color:#FFF;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:active{
+    transform:scale(.9);
+}
+
+input[type="submit"]:hover{
+    background-color:#5040F2;
+    color:#111;
+}
+
+p{
+    position:relative;
+    bottom: 20px;
+    border-radius:5px;
+    background-color:red;
+    font-size: 16px;
+    color:#FFF;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width:650px){
+    h1{
+        font-size:25px;
+    }
+    input[type="submit"]{
+    padding:8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    }
+    input[type="text"], [type="email"]{
+    padding:5px;
+    border-radius:7px;
+    font-size:13px;
+    }
+
+    textArea{
+        padding:5px;
+        border-radius:7px;
+        font-size:13px;
+    }
+    textArea::placeholder{
+        color:#111;
+    }
+}
+
+@media screen and (max-width:550px){
+    h1{
+        font-size:20px;
+    }
 }
